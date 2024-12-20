@@ -171,7 +171,7 @@ class RequestGenerator implements Runnable {
                 int floor = random.nextInt(manager.getTotalFloors()) + 1;
                 System.out.println("Запрос на вызов лифта на этаж " + floor);
                 manager.addRequest(floor);
-                Thread.sleep(random.nextInt(5000) + 1000);
+                Thread.sleep(random.nextInt(2500) + 400);
             } catch (InterruptedException e) {
                 Thread.currentThread().interrupt();
                 break;
